@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+
+function Circle(r) {
+  
+  this.ra = r;
+  this.perimeter = function () {
+  return this.ra * Math.PI * 2;
+}
+this.area = function () {
+  return this.ra * Math.PI * this.ra;
+}
+
+};
+
+
+
+var c1= new Circle(7);
+
+console.log('periimeter =', c1.perimeter().toFixed(2));
+console.log('area =', c1.area().toFixed(2));
+</script>
+</body>
+</html>
